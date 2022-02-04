@@ -1,0 +1,54 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+#paginagracias{
+    background: url(img/stock-photo-blurred-background-night-colorful-bokeh.webp);
+    background-size: 100%;
+}
+
+#gracias{
+    text-align: center;
+    color: white;
+    font-size: 5em;
+    text-transform: uppercase;
+    position: absolute;
+    left: 50%;
+    top:  30%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+#agradecimiento{
+    text-align: center;
+    color: white;
+    font-size: 3em;
+    text-transform: uppercase;
+    position: absolute;
+    left: 50%;
+    top:  60%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+#volver{
+    color: white;
+    background: #0f4970;
+    font-size: 2em;
+    text-align: center;
+    color: white;
+    position: absolute;
+    left: 50%;
+    top:  20%;
+    transform: translateX(-50%) translateY(-50%);
+    box-shadow: 0 0 10px #0F9688, 0 0 40px #0F9688, 0 0 80px #5d236d;
+    -o-transition-delay: 1s;
+}
+
+#volver:hover{
+    background: #0e0844;
+}
+
+#volver:active{
+    background: #0F9688;
+}
