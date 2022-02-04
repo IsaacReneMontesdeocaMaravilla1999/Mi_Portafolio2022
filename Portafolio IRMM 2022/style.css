@@ -1,0 +1,433 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+nav{
+    position: fixed;
+    background: #a3a514;
+    height: 80px;
+    width: 100%;
+    z-index: 2;
+}
+.enlace{
+    position: absolute;
+    padding: 20px 50px;
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+}
+.logo{
+    height: 40px;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: #fff;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    
+}
+li a.active, li a:hover{
+    background: #cc0a0a;
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+section{
+    background: url(fondo.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: calc(100vh - 80px);
+}
+
+
+.main_image img{
+    height: 400px;
+    margin: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(6px);
+    
+}
+
+
+/*Tarjeta de presentacion*/
+#main_name{
+    background: rosybrown;
+   height: 25%;
+   width: 35%;
+   position: absolute;
+   left: 32%;
+   top: 100px;
+   border-radius: 30px;
+   border: 4px solid black;
+   z-index: 1;
+}
+
+#letters{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+    font-size: 100%;
+    font-weight: bold;
+    margin-top: 2%;
+}
+
+#laptop{
+    margin-bottom: 90px;
+    filter: none;
+    height: 20%;
+    width: 20%;
+}
+
+/*FOTO DE PERFIL*/
+#perfil{
+    position: absolute;
+    right: 25%;
+    top: 140px;
+    filter: none;
+    width: 180px;
+    height: 180px;
+    border-radius: 100%;
+    text-align: center;
+    border: 3px solid rgb(29, 26, 26);
+}
+
+.btn-cv{
+    background-color: #0e0844;
+    color: white;
+    padding: 15px 30px;
+    letter-spacing: 4px;
+    font-size: 24px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.btn-cv:hover{
+    background: #0F9688;
+    box-shadow: 0 0 10px #0F9688, 0 0 40px #0F9688, 0 0 80px #5d236d;
+    -o-transition-delay: 1s;
+}
+
+.btn2{
+    color: white;
+    background-color: #011857;
+}
+.btn2:hover{
+    background-color: #14023f;
+}
+.btn2:active{
+    background-color: #0f4970;
+}
+
+/*Sobre mi*/
+#about_me{
+    background: #2D989B;
+    font-size: 1.9em;
+    height: 100%;
+    padding: 1%;
+}
+
+#about_me p{
+    margin: 10px;
+    color: white;
+}
+
+
+#about_me h2{
+    padding: 2%;
+    margin: 0;
+    font-size: 300%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+#articulo{
+    padding: 1%;
+    font-size: 90%;
+    background: red;
+    margin-left: 5%;
+    margin-top: -3%;
+    width: 90%;
+    border: black solid 4px;
+    border-radius: 30px;
+   /* margin: 60px;*/
+}
+
+
+
+/*Mis conocimientos*/
+#knowledge{
+    height: 300px;
+    background: #5C069B;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+#knowledge h2{
+    font-size: 250%;
+    height: 100%;
+    margin: 5px;
+    
+}
+
+.flex-container{
+    position: absolute;
+    border: 1px solid black;
+    background: rgb(121, 3, 231);
+    padding: 20px;
+    display: flex;
+    flex-wrap: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: flex-start;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 80%;
+}
+
+.flex-container div{
+    border: 1px solid black;
+    background: white;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    width: 50%;
+    height: 100px;
+    line-height: 100%;
+    margin: 5px;
+    text-align: center;
+}
+
+.flex-container img{
+    border: 1px solid black;
+    background: white;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    width: 12%;
+    height: 50%;
+    line-height: 120px;
+    margin: 5px;
+}
+
+/*Mis proyectos*/
+
+#projects{
+    height: 300px;
+    background: crimson;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+#projects h2{
+    font-size: 250%;
+    height: 90%;
+}
+
+
+
+/*Contacto*/
+footer{
+    height: 650px;
+    background: rgb(3, 68, 99);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+footer h2{
+    font-size: 250%;
+    height: 95%;
+}
+
+/*Formulario*/
+form{
+    background-color: white;
+    border-radius: 3px;
+    color: #999;
+    font-size: 0.8em;
+    padding: 10px;
+    margin: 0 auto;
+    width: 300px;
+    position: absolute;
+    left: 50px;
+}
+
+input, textarea{
+    border: 0;
+    outline: none;
+    width: 280px;
+}
+
+.field{
+    border: solid 1px #ccc;
+    padding: 10px;
+}
+
+.field:focus{
+    border-color: #18A383;
+}
+.center-content{
+    text-align: center;
+}
+
+.btn{
+    border-radius: 3px;
+    display: inline-block;
+    padding: 20px 15px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 white;
+    box-shadow: 0 1px 0 black;
+}
+
+.btn-green{
+    color: white;
+    background-color: #006302;
+}
+.btn-green:hover{
+    background-color: #023f03;
+}
+.btn-green:active{
+    background-color: #2f9930;
+}
+
+/*REDES SOCIALES*/
+.social_networks a{
+    display: inline-flex;
+    color: white;
+    height: 90px;
+    width: 90px;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 50%;
+    margin: 5.6px;
+    transition: transform 0.4s;
+    font-size: 50px;
+}
+
+.social_networks{
+    position: absolute;
+    left: 40%;
+    top: 1900px;
+}
+
+.social_networks a:hover{
+    transform: scale(1.3);
+}
+
+.social_networks a.facebook{
+    background-color: #3C70A4;
+}
+
+.social_networks a.twitter{
+    background-color: #5BD1D7;
+}
+
+.social_networks a.instagram{
+    background-color: #BB7171;
+}
+
+.social_networks a.youtube{
+    background-color: red;
+}
+
+.social_networks a.github{
+    background-color: rgb(63, 27, 4);
+}
+
+@media (max-width: 952px){
+    .enlace{
+        padding-left: 20px;
+    }
+    nav ul li a{
+        font-size: 16px;
+        
+    }
+
+    
+/*REDES SOCIALES*/
+.social_networks a{
+    display: inline-flex;
+    color: white;
+    height: 45px;
+    width: 45px;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 50%;
+    margin: 1.0px;
+    transition: transform 0.4s;
+    font-size: 30px;
+}
+
+.social_networks{
+    position: absolute;
+    left: 10%;
+    top: 2710px;
+}
+}
+
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #062038;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 2;
+      
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+        
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    li a:hover, li a.active{
+        background: none;
+        color: red;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+}
